@@ -1,5 +1,5 @@
 # acceleo_mda_project
-My firts effort with MDA application with acceleo
+This project is about my firts steps with MDA application with acceleo
 
 This is a eclipse luna modeling with (papyrus, acceleo, ocl plugins installed) workspace 
 
