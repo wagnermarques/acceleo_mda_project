@@ -1,0 +1,46 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			public  status
+			public  description
+			public  incidentId
+			public  mensagens
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.Mensagem
+			public  remetente
+			public  data
+			public  destinatario
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public pendente
+			public fechado
+			public atribuidoParaUmTecnico
+			public resolvido
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Departamento
+			private  nome
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private  codigo
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private  nome
+			private  cpf
+		
+	
+	
+	
+	
+	
+	

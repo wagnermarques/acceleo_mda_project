@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.acceleo.ide.ui.launching.launchConfigurationType">
+<stringAttribute key="org.eclipse.acceleo.ide.ui.ARGUMENTS" value=""/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_PROFILING" value="false"/>
+<booleanAttribute key="org.eclipse.acceleo.ide.ui.COMPUTE_TRACEABILITY" value="false"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.LAUNCHING_STRATEGY_DESCRIPTION" value="Java Application"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.MODEL_PATH" value="/FzlDefaultOrganizationModel/fzl_default_organization_model.uml"/>
+<stringAttribute key="org.eclipse.acceleo.ide.ui.TARGET_PATH" value="/FzlDefaultAcceleoProject/src"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/FzlDefaultAcceleoProject"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="FzlDefaultAcceleoProject.common.Generate"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="&quot;/home/administrador/fzlbpms/fzlbpms/workspaces/eclipse-modeling-luna-SR2-linux-gtk-x86_64/FzlDefaultOrganizationModel/fzl_default_organization_model.uml&quot; &quot;/home/administrador/fzlbpms/fzlbpms/workspaces/eclipse-modeling-luna-SR2-linux-gtk-x86_64/FzlDefaultAcceleoProject/src&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FzlDefaultAcceleoProject"/>
+</launchConfiguration>

@@ -1,0 +1,58 @@
+http://eclipsemde.blogspot.com.br/2010_04_01_archive.html
+http://wiki.eclipse.org/MDT/OCL
+https://www.blogger.com/profile/05605492202750997843
+http://eclipsemde.blogspot.com.br/
+http://www.omg.org/spec/MOFM2T/1.0/
+https://www.eclipse.org/gendoc/documentation/Gendoc_v0.5_tutorial.pdf
+http://www.in2p3.fr/actions/formation/Info09/TPC_Chokri.pdf
+http://www.acceleo.org/doc/obeo/en/acceleo-2.6-reference.pdf
+http://retis.sssup.it/~marco/files/lesson22-Acceleob.pdf
+http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.acceleo.doc%2Fpages%2Freference%2Flanguage.html
+http://www.omg.org/news/meetings/tc/mn/special-events/ecl/Juliot-Acceleo.pdf
+http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.acceleo.doc%2Fdoc%2Fhtml%2Facceleo_tutorial_android_example.html
+
+http://acceleo-jee.googlecode.com/svn/trunk/org.eclipse.acceleo.module.pim.uml30.gen.java.impala.build/src/org/eclipse/acceleo/module/pim/uml30/gen/java/impala/build/common/entityUtil.mtl
+
+
+
+	if (p.name = 'byte') then
+		
+	else
+	   
+	endif
+		
+	if (typeName = 'short' or typeName = 'Short' ) then
+
+	else
+		elseif (typeName = 'int' or typeName = 'Integer' ) then 
+	endif
+	else
+		elseif (typeName = 'long' or typeName = 'Long' ) then 
+
+	else
+		elseif (typeName = 'float' or typeName = 'Float' ) then
+
+	else
+		elseif (typeName = 'double' or typeName = 'Double' ) then 
+
+	else
+		elseif (typeName = 'boolean' or typeName = 'Boolean' ) then
+
+	else
+		elseif (typeName = 'char' or typeName = 'Char' ) then
+
+	else
+		elseif (typeName = 'String') then
+
+	else
+		elseif (typeName = 'Date')
+
+	else
+		elseif (typeName = 'Time')
+	endif
+
+
+
+
+
+

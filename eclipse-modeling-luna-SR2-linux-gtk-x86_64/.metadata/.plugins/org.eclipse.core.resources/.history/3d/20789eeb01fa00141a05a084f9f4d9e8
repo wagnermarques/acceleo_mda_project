@@ -1,0 +1,16 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+
+[template public generateElement(m : Model)]
+	[comment @main /]
+	[file ('br.com.fzlbpms.uml.model_description', false, 'UTF-8')]
+	CLASS DIAGRAM: PACKAGES
+		[for (p : Package | m.ownedElement->selectByType(Package))]
+			[p.name/]
+			[for (c : Class | m.ownedElement->SelectByType(Class))]
+				[c.name/]
+			[/for]
+		[/for]
+	[/file]
+[/template]

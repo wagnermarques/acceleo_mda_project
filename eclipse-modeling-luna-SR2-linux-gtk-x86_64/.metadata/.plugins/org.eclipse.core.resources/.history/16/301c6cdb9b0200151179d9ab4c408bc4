@@ -1,0 +1,39 @@
+
+package br.com.organization.model;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Funcionario {
+	
+	private Integer id;
+	
+	private int codigo	
+
+
+	//constructors
+	public void Funcionario(){
+		//not be implemented
+	}
+	public void Funcionario(int codigo){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+	public int getCodigo(){
+		return this.codigo;
+	}
+	public void setCodigo(int codigo){
+		this.codigo = codigo;
+	}		
+}

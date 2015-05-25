@@ -1,0 +1,8 @@
+	br.com.organization.model
+		Depto
+		Functionario
+		Pessoa
+	br.com.fzlbpms.itil.itsm.icm
+		Incident
+		IncidentCommunication
+	

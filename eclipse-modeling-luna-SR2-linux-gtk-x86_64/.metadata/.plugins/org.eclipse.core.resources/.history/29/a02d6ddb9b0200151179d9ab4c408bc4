@@ -1,0 +1,299 @@
+
+package br.com.organization.model;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Class1 {
+	
+	private Integer id;
+	
+	public boolean aBoolean	
+	public java.math.BigInteger aBigInteger	
+	public invalid.invalid Attribute7	
+	public java.lang.Byte aByteObject	
+	public double aDouble	
+	public int aInt	
+	public invalid.invalid Attribute8	
+	public float float	
+	public byte aByte	
+	public byte[] aByteArray	
+	public java.lang.Integer aIntegerObject	
+	public invalid.invalid Attribute9	
+	public java.lang.Date aDate	
+	public invalid. Attribute3	
+	public invalid.invalid Attribute4	
+	public invalid.invalid Attribute6	
+	public long aLong	
+	public java.util.Map aMap	
+	public enum aEnumerator	
+	public java.math.BigDecimal aBigDecimal	
+	public java.lang.Double aDoubleObject	
+	public java.lang.Character aCharacterObjetc	
+	public java.lang.Booelan aBooleanObject	
+	public java.util.List aList	
+	public char aChar	
+	public java.lang.Float aFloatObject	
+	public invalid.invalid Attribute5	
+
+
+	//constructors
+	public void Class1(){
+		//not be implemented
+	}
+	public void Class1(boolean aBoolean){
+		//not be implemented
+	}
+	public void Class1(java.math.BigInteger aBigInteger){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute7){
+		//not be implemented
+	}
+	public void Class1(java.lang.Byte aByteObject){
+		//not be implemented
+	}
+	public void Class1(double aDouble){
+		//not be implemented
+	}
+	public void Class1(int aInt){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute8){
+		//not be implemented
+	}
+	public void Class1(float float){
+		//not be implemented
+	}
+	public void Class1(byte aByte){
+		//not be implemented
+	}
+	public void Class1(byte[] aByteArray){
+		//not be implemented
+	}
+	public void Class1(java.lang.Integer aIntegerObject){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute9){
+		//not be implemented
+	}
+	public void Class1(java.lang.Date aDate){
+		//not be implemented
+	}
+	public void Class1(invalid. Attribute3){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute4){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute6){
+		//not be implemented
+	}
+	public void Class1(long aLong){
+		//not be implemented
+	}
+	public void Class1(java.util.Map aMap){
+		//not be implemented
+	}
+	public void Class1(enum aEnumerator){
+		//not be implemented
+	}
+	public void Class1(java.math.BigDecimal aBigDecimal){
+		//not be implemented
+	}
+	public void Class1(java.lang.Double aDoubleObject){
+		//not be implemented
+	}
+	public void Class1(java.lang.Character aCharacterObjetc){
+		//not be implemented
+	}
+	public void Class1(java.lang.Booelan aBooleanObject){
+		//not be implemented
+	}
+	public void Class1(java.util.List aList){
+		//not be implemented
+	}
+	public void Class1(char aChar){
+		//not be implemented
+	}
+	public void Class1(java.lang.Float aFloatObject){
+		//not be implemented
+	}
+	public void Class1(invalid.invalid Attribute5){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+	public boolean getABoolean(){
+		return this.aBoolean;
+	}
+	public void setABoolean(boolean aBoolean){
+		this.aBoolean = aBoolean;
+	}		
+	public java.math.BigInteger getABigInteger(){
+		return this.aBigInteger;
+	}
+	public void setABigInteger(java.math.BigInteger aBigInteger){
+		this.aBigInteger = aBigInteger;
+	}		
+	public invalid.invalid getAttribute7(){
+		return this.Attribute7;
+	}
+	public void setAttribute7(invalid.invalid Attribute7){
+		this.Attribute7 = Attribute7;
+	}		
+	public java.lang.Byte getAByteObject(){
+		return this.aByteObject;
+	}
+	public void setAByteObject(java.lang.Byte aByteObject){
+		this.aByteObject = aByteObject;
+	}		
+	public double getADouble(){
+		return this.aDouble;
+	}
+	public void setADouble(double aDouble){
+		this.aDouble = aDouble;
+	}		
+	public int getAInt(){
+		return this.aInt;
+	}
+	public void setAInt(int aInt){
+		this.aInt = aInt;
+	}		
+	public invalid.invalid getAttribute8(){
+		return this.Attribute8;
+	}
+	public void setAttribute8(invalid.invalid Attribute8){
+		this.Attribute8 = Attribute8;
+	}		
+	public float getFloat(){
+		return this.float;
+	}
+	public void setFloat(float float){
+		this.float = float;
+	}		
+	public byte getAByte(){
+		return this.aByte;
+	}
+	public void setAByte(byte aByte){
+		this.aByte = aByte;
+	}		
+	public byte[] getAByteArray(){
+		return this.aByteArray;
+	}
+	public void setAByteArray(byte[] aByteArray){
+		this.aByteArray = aByteArray;
+	}		
+	public java.lang.Integer getAIntegerObject(){
+		return this.aIntegerObject;
+	}
+	public void setAIntegerObject(java.lang.Integer aIntegerObject){
+		this.aIntegerObject = aIntegerObject;
+	}		
+	public invalid.invalid getAttribute9(){
+		return this.Attribute9;
+	}
+	public void setAttribute9(invalid.invalid Attribute9){
+		this.Attribute9 = Attribute9;
+	}		
+	public java.lang.Date getADate(){
+		return this.aDate;
+	}
+	public void setADate(java.lang.Date aDate){
+		this.aDate = aDate;
+	}		
+	public invalid. getAttribute3(){
+		return this.Attribute3;
+	}
+	public void setAttribute3(invalid. Attribute3){
+		this.Attribute3 = Attribute3;
+	}		
+	public invalid.invalid getAttribute4(){
+		return this.Attribute4;
+	}
+	public void setAttribute4(invalid.invalid Attribute4){
+		this.Attribute4 = Attribute4;
+	}		
+	public invalid.invalid getAttribute6(){
+		return this.Attribute6;
+	}
+	public void setAttribute6(invalid.invalid Attribute6){
+		this.Attribute6 = Attribute6;
+	}		
+	public long getALong(){
+		return this.aLong;
+	}
+	public void setALong(long aLong){
+		this.aLong = aLong;
+	}		
+	public java.util.Map getAMap(){
+		return this.aMap;
+	}
+	public void setAMap(java.util.Map aMap){
+		this.aMap = aMap;
+	}		
+	public enum getAEnumerator(){
+		return this.aEnumerator;
+	}
+	public void setAEnumerator(enum aEnumerator){
+		this.aEnumerator = aEnumerator;
+	}		
+	public java.math.BigDecimal getABigDecimal(){
+		return this.aBigDecimal;
+	}
+	public void setABigDecimal(java.math.BigDecimal aBigDecimal){
+		this.aBigDecimal = aBigDecimal;
+	}		
+	public java.lang.Double getADoubleObject(){
+		return this.aDoubleObject;
+	}
+	public void setADoubleObject(java.lang.Double aDoubleObject){
+		this.aDoubleObject = aDoubleObject;
+	}		
+	public java.lang.Character getACharacterObjetc(){
+		return this.aCharacterObjetc;
+	}
+	public void setACharacterObjetc(java.lang.Character aCharacterObjetc){
+		this.aCharacterObjetc = aCharacterObjetc;
+	}		
+	public java.lang.Booelan getABooleanObject(){
+		return this.aBooleanObject;
+	}
+	public void setABooleanObject(java.lang.Booelan aBooleanObject){
+		this.aBooleanObject = aBooleanObject;
+	}		
+	public java.util.List getAList(){
+		return this.aList;
+	}
+	public void setAList(java.util.List aList){
+		this.aList = aList;
+	}		
+	public char getAChar(){
+		return this.aChar;
+	}
+	public void setAChar(char aChar){
+		this.aChar = aChar;
+	}		
+	public java.lang.Float getAFloatObject(){
+		return this.aFloatObject;
+	}
+	public void setAFloatObject(java.lang.Float aFloatObject){
+		this.aFloatObject = aFloatObject;
+	}		
+	public invalid.invalid getAttribute5(){
+		return this.Attribute5;
+	}
+	public void setAttribute5(invalid.invalid Attribute5){
+		this.Attribute5 = Attribute5;
+	}		
+}

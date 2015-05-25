@@ -1,0 +1,77 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			public  mensagem mensagens	
+			public  int incidentId	
+			public  java.lang.String description	
+			public  IncidentStatus status	
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.Mensagem
+			public  Funcionario remetente	
+			public  Funcionario destinatario	
+			public  java.lang.Date data	
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public atribuidoParaUmTecnico
+			public fechado
+			public resolvido
+			public pendente
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Class1
+			public   Attribute6	
+			public   aBoolean	
+			public  java.lang.Byte aByteObject	
+			public   Attribute7	
+			public   Attribute4	
+			public  java.util.Map aMap	
+			public   Attribute9	
+			public  int aIntegerObject	
+			public  java.lang.Double aDoubleObject	
+			public  java.lang.BigDecimal aBigDecimal	
+			public  java.math.BigInteger aBigInteger	
+			public  float float	
+			public  byte aByteArray	
+			public  float aFloatObject	
+			public  long aLong	
+			public  int aInt	
+			public  enum aEnumerator	
+			public   Attribute5	
+			public  double aDouble	
+			public  java.lang.Date aDate	
+			public   Attribute8	
+			public  char aChar	
+			public   Attribute3	
+			public  byte aByte	
+			public  char aCharacterObjetc	
+			public  java.lang.Booelan aBooleanObject	
+			public  java.util.List aList	
+		
+	
+	
+		br.com.organization.model.Departamento
+			private  java.lang.String nome	
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private  int codigo	
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private  java.lang.String nome	
+			private  java.lang.String cpf	
+		
+	
+	
+	
+	
+	
+	

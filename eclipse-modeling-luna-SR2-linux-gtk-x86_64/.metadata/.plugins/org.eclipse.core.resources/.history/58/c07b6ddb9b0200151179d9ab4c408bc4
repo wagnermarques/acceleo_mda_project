@@ -1,0 +1,8 @@
+public class Functionario {
+
+	//constructor
+	public void Functionario(){
+		//
+	}
+
+}

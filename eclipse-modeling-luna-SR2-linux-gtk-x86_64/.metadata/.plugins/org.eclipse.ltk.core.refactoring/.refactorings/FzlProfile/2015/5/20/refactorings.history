@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FzlProfile/model.profile.di&apos; to &apos;fzlbpms.profile.di&apos;" description="Rename resource &apos;model.profile.di&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="model.profile.di" name="fzlbpms.profile.di" stamp="1431307956584" updateReferences="true"/>
+</session>

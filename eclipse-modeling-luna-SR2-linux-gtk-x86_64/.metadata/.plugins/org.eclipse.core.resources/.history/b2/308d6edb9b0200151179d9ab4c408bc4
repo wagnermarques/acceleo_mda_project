@@ -1,0 +1,49 @@
+
+package br.com.organization.model;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Pessoa {
+	
+	private Integer id;
+	
+	private java.lang.String nome	
+	private java.lang.String cpf	
+
+
+	//constructors
+	public void Pessoa(){
+		//not be implemented
+	}
+	public void Pessoa(java.lang.String nome){
+		//not be implemented
+	}
+	public void Pessoa(java.lang.String cpf){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+	public java.lang.String getNome(){
+		return this.nome;
+	}
+	public void setNome(java.lang.String nome){
+		this.nome = nome;
+	}		
+	public java.lang.String getCpf(){
+		return this.cpf;
+	}
+	public void setCpf(java.lang.String cpf){
+		this.cpf = cpf;
+	}		
+}

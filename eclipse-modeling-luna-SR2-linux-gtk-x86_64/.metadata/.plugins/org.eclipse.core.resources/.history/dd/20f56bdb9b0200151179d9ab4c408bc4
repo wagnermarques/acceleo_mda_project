@@ -1,0 +1,69 @@
+
+package br.com.fzlbpms.itil.itsm.icm;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Incident {
+	
+	private Integer id;
+	
+	public br.com.fzlbpms.itil.itsm.icm.IncidentStatus status	
+	public java.lang.String description	
+	public int incidentId	
+	protected java.util.List mensagens	
+
+
+	//constructors
+	public void Incident(){
+		//not be implemented
+	}
+	public void Incident(br.com.fzlbpms.itil.itsm.icm.IncidentStatus status){
+		//not be implemented
+	}
+	public void Incident(java.lang.String description){
+		//not be implemented
+	}
+	public void Incident(int incidentId){
+		//not be implemented
+	}
+	public void Incident(java.util.List mensagens){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+	public br.com.fzlbpms.itil.itsm.icm.IncidentStatus getStatus(){
+		return this.status;
+	}
+	public void setStatus(br.com.fzlbpms.itil.itsm.icm.IncidentStatus status){
+		this.status = status;
+	}		
+	public java.lang.String getDescription(){
+		return this.description;
+	}
+	public void setDescription(java.lang.String description){
+		this.description = description;
+	}		
+	public int getIncidentId(){
+		return this.incidentId;
+	}
+	public void setIncidentId(int incidentId){
+		this.incidentId = incidentId;
+	}		
+	public java.util.List getMensagens(){
+		return this.mensagens;
+	}
+	public void setMensagens(java.util.List mensagens){
+		this.mensagens = mensagens;
+	}		
+}

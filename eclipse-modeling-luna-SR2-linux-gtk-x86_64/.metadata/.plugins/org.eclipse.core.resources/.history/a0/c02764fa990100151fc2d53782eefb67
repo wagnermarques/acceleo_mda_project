@@ -1,0 +1,20 @@
+[comment encoding = UTF-8 /]
+[module mainJavaJPAEntities('http://www.eclipse.org/uml2/5.0.0/UML') extends FzlDefaultAcceleoProject::templates::main]
+
+
+[template public mainTemplate(c : Class)]
+[comment @main /]
+[file (c.name + '.java', false, 'UTF-8')]
+public class [c.name/] {
+
+	//constructor
+	public void [c.name/](){
+		//
+	}
+
+}
+[/file]
+[/template]
+
+
+

@@ -1,0 +1,77 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			protected java.util.List mensagens;	
+			public int incidentId;	
+			public java.lang.String description;	
+			public br.com.fzlbpms.itil.itsm.icm.IncidentStatus status;	
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.Mensagem
+			public br.com.organization.model.Funcionario remetente;	
+			public br.com.organization.model.Funcionario destinatario;	
+			public java.lang.Date data;	
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public pendente
+			public resolvido
+			public atribuidoParaUmTecnico
+			public fechado
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Class1
+			public invalid.invalid Attribute6;	
+			public boolean aBoolean;	
+			public java.lang.Byte aByteObject;	
+			public invalid.invalid Attribute7;	
+			public invalid.invalid Attribute4;	
+			public java.util.Map aMap;	
+			public invalid.invalid Attribute9;	
+			public java.lang.Integer aIntegerObject;	
+			public java.lang.Double aDoubleObject;	
+			public java.math.BigDecimal aBigDecimal;	
+			public java.math.BigInteger aBigInteger;	
+			public float float;	
+			public byte[] aByteArray;	
+			public java.lang.Float aFloatObject;	
+			public long aLong;	
+			public int aInt;	
+			public enum aEnumerator;	
+			public invalid.invalid Attribute5;	
+			public double aDouble;	
+			public java.lang.Date aDate;	
+			public invalid.invalid Attribute8;	
+			public char aChar;	
+			public invalid. Attribute3;	
+			public byte aByte;	
+			public java.lang.Character aCharacterObjetc;	
+			public java.lang.Booelan aBooleanObject;	
+			public java.util.List aList;	
+		
+	
+	
+		br.com.organization.model.Departamento
+			private java.lang.String nome;	
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private int codigo;	
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private java.lang.String nome;	
+			private java.lang.String cpf;	
+		
+	
+	
+	
+	
+	
+	

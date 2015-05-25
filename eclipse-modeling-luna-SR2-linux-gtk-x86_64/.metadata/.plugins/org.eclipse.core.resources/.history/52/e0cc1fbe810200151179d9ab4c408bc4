@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:fzlbpms_profile="http:///schemas/fzlbpms_profile/_uA-jEPd-EeS3QdCzpntchg/5" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/fzlbpms_profile/_uA-jEPd-EeS3QdCzpntchg/5 ../FzlProfile/fzlbpms.profile.uml#_uA-jEfd-EeS3QdCzpntchg">
+  <uml:Model xmi:id="_pc0iEO7QEeSSKdzyQ_N9lw" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_PT118PZCEeSen4wH15IwNQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_pc2-UO7QEeSSKdzyQ_N9lw" name="Activity1"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_pc9E8O7QEeSSKdzyQ_N9lw" name="Interaction1"/>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_pc_hMO7QEeSSKdzyQ_N9lw" name="StateMachine1">
+      <region xmi:type="uml:Region" xmi:id="_pdAvUO7QEeSSKdzyQ_N9lw" name="Region1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vDAugO7QEeSSKdzyQ_N9lw" name="br.com.organization.model">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ouFy0O7bEeSSKdzyQ_N9lw" name="Pessoa" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xhzrMO7bEeSSKdzyQ_N9lw" name="cpf" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zfUgwO7bEeSSKdzyQ_N9lw" name="nome" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ri2eUPd_EeS3QdCzpntchg" name="Funcionario">
+        <generalization xmi:type="uml:Generalization" xmi:id="_y0TqYAGeEeWea-TdXuRAPw" general="_ouFy0O7bEeSSKdzyQ_N9lw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rYIwkAGaEeWea-TdXuRAPw" name="codigo" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YikO0PeAEeS3QdCzpntchg" name="Departamento">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_a4-5sAGeEeWea-TdXuRAPw" name="nome" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_-aj70AGeEeWea-TdXuRAPw" name="recebeFunctionario" visibility="protected">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_ejMFIAGfEeWea-TdXuRAPw" name="funcionario" type="_ri2eUPd_EeS3QdCzpntchg"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_FzBQ4AKAEeW2ctnuXvWblQ" name="Class1" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SCgFgAKAEeW2ctnuXvWblQ" name="aBigDecimal">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kUz_QAKAEeW2ctnuXvWblQ" name="aBigInteger">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigInteger"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_px89YAKAEeW2ctnuXvWblQ" name="aBoolean">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tg4GMAKAEeW2ctnuXvWblQ" name="aBooleanObject">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_x6MP0AKAEeW2ctnuXvWblQ" name="aByte">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1ooQcAKAEeW2ctnuXvWblQ" name="aByteArray">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_y8e6cO7QEeSSKdzyQ_N9lw" name="br.com.fzlbpms.itil.itsm.icm">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_I2ZssO7UEeSSKdzyQ_N9lw" annotatedElement="_y8e6cO7QEeSSKdzyQ_N9lw">
+        <body>http://en.wikipedia.org/wiki/Incident_management_%28ITSM%29
+Incident Management (IcM) is an IT service management (ITSM) process area
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1ygywO7YEeSSKdzyQ_N9lw" name="Incident">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zZtdcO7aEeSSKdzyQ_N9lw" name="status" type="__69mEAI3EeWS8JDpiR8Bjg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_SG_DEO7bEeSSKdzyQ_N9lw" annotatedElement="_zZtdcO7aEeSSKdzyQ_N9lw">
+            <body> Assigned, Closed, Escalated TTO, Escalated TTR, New, Pending, Resolved </body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0nsTgO7aEeSSKdzyQ_N9lw" name="description">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_1TkiEO7aEeSSKdzyQ_N9lw" name="incidentId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AaifcAGzEeW6BpIncqUSBA" name="mensagens" type="_6owooO7bEeSSKdzyQ_N9lw" isUnique="false" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_BRVmgO7ZEeSSKdzyQ_N9lw" name="IncidentManagementProcesses">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_ajMFQO7ZEeSSKdzyQ_N9lw" name="IncidentDetection"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_eivrEO7ZEeSSKdzyQ_N9lw" name="IncidentRecord"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_gbhKkO7ZEeSSKdzyQ_N9lw" name="IncidentClassification"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_k1EkwO7ZEeSSKdzyQ_N9lw" name="IncidentSupportAndAnalysis"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lP4RcO7ZEeSSKdzyQ_N9lw" name="IncidentResolutionAndRecovery"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_lpMwYO7ZEeSSKdzyQ_N9lw" name="IncidentClosure"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_mAufkO7ZEeSSKdzyQ_N9lw" name="SetIncidentOwnership"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="__C3uYO7ZEeSSKdzyQ_N9lw" name="IncidentMonitorying"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_A_DuQO7aEeSSKdzyQ_N9lw" name="IncidentComunication"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_BWTwoO7aEeSSKdzyQ_N9lw" name="incidentFrameworkManagement"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_Yuoh8O7aEeSSKdzyQ_N9lw" name="evaluationOfIncidentFrameworkManagement"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6owooO7bEeSSKdzyQ_N9lw" name="mensagem">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_I7DCgO7cEeSSKdzyQ_N9lw" name="data" isUnique="false">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TqluYO7cEeSSKdzyQ_N9lw" name="remetente" type="_ri2eUPd_EeS3QdCzpntchg" association="_Tqm8gO7cEeSSKdzyQ_N9lw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TqluYe7cEeSSKdzyQ_N9lw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TqluYu7cEeSSKdzyQ_N9lw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-TlPcAGxEeW6BpIncqUSBA" name="destinatario" type="_ri2eUPd_EeS3QdCzpntchg" isUnique="false"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Tqm8gO7cEeSSKdzyQ_N9lw" memberEnd="_Tqm8ge7cEeSSKdzyQ_N9lw _TqluYO7cEeSSKdzyQ_N9lw">
+        <name xsi:nil="true"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Tqm8ge7cEeSSKdzyQ_N9lw" name="incidentCommunication" type="_6owooO7bEeSSKdzyQ_N9lw" association="_Tqm8gO7cEeSSKdzyQ_N9lw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tqm8gu7cEeSSKdzyQ_N9lw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tqm8g-7cEeSSKdzyQ_N9lw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="__69mEAI3EeWS8JDpiR8Bjg" name="IncidentStatus">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wFvScAI6EeWS8JDpiR8Bjg" name="pendente"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_393sUAI6EeWS8JDpiR8Bjg" name="atribuidoParaUmTecnico"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9pz7cAI6EeWS8JDpiR8Bjg" name="resolvido"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EIkHkAI7EeWS8JDpiR8Bjg" name="fechado"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_A0uLYPd-EeS3QdCzpntchg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zTrLwPd-EeS3QdCzpntchg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTrLwfd-EeS3QdCzpntchg" key="Version" value="0.0.6"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTrLwvd-EeS3QdCzpntchg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTrLw_d-EeS3QdCzpntchg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTrLxPd-EeS3QdCzpntchg" key="Date" value="2015-05-10"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zTrLxfd-EeS3QdCzpntchg" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A0vZgPd-EeS3QdCzpntchg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../FzlProfile/fzlbpms.profile.uml#_uA-jEfd-EeS3QdCzpntchg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../FzlProfile/fzlbpms.profile.uml#_VHB0wPa_EeSEWeU84eZ7qw"/>
+    </profileApplication>
+  </uml:Model>
+  <fzlbpms_profile:Entity xmi:id="_A0tkUPd-EeS3QdCzpntchg" base_Class="_ouFy0O7bEeSSKdzyQ_N9lw"/>
+  <fzlbpms_profile:Entity xmi:id="_8WEj4Pd_EeS3QdCzpntchg" base_Class="_ri2eUPd_EeS3QdCzpntchg"/>
+</xmi:XMI>

@@ -1,0 +1,8 @@
+public class Pessoa {
+
+	//constructor
+	public void Pessoa(){
+		//
+	}
+
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Element:annotatedElement">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml#_zZtdcO7aEeSSKdzyQ_N9lw"/>
+				<item value="platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml#_y8e6cO7QEeSSKdzyQ_N9lw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigInteger"/>
+				<item value="platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml#_6owooO7bEeSSKdzyQ_N9lw"/>
+				<item value="platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml#_ri2eUPd_EeS3QdCzpntchg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EShort"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EIntegerObject"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloatObject"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEnumerator"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDoubleObject"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ECharacterObject"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteObject"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml:uml:Property:subsettedProperty">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/FzlDefaultOrganizationModel/fzl_default_organization_model.uml#_MMd2gAKREeW2ctnuXvWblQ"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.emf.customizationManager">
+	</section>
+</section>

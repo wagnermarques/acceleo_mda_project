@@ -1,0 +1,46 @@
+[comment encoding = UTF-8 /]
+[module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
+
+
+[template public generateElement(m : Model)]
+[comment @main /]
+[file ('br.com.fzlbpms.uml.model_description', false, 'UTF-8')]
+LISTING PACKAGES...
+[for (p : Package | m.ownedElement->selectByType(Package))]
+	[p.generatePackage()/]
+			[for (c : Class | m.ownedElement->selectByType(Class))]
+				[c.generateClass()/]
+			[/for]
+		[/for]
+	[/file]
+[/template]
+
+[comment http://lowcoupling.com/post/47347056110/models-to-text-transformations-with-mofm2t-and /]
+[template public listPackages(_package: Package)]
+[for (p : Package | m.ownedElement->selectByType(Package))]
+	[p.generatePackage()/]
+[/for]
+
+[/template]
+
+[template public generatePackage(_package:Package)]
+Package [_package.name/] which consists of [_package.ownedElement->selectByType(Package)->size()/] Packages
+    [for (p:Package|_package.ownedElement->selectByType(Package))]
+        [p.generatePackage()/]
+    [/for]
+and [_package.ownedElement->selectByType(Class)->size()/] classes
+    [for (cl:Class|_package.ownedElement->selectByType(Class))]
+        [cl.generateClass()/]
+    [/for]
+[/template]
+ 
+[template public generateClass(_class:Class) post(trim())]
+ [_class.name/] which extends [_class.getSuperClasses()->size()/] classes
+    [for (super:Class|_class.getSuperClasses())]
+        [super.name/]
+    [/for]
+ and has [_class.ownedAttribute->size()/] attributes
+    [for (at:Property|_class.ownedAttribute)]
+    [at.type.name/] [at.name/]
+    [/for]
+[/template]

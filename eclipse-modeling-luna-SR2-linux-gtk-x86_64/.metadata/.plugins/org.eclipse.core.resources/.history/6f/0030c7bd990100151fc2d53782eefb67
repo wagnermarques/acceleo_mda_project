@@ -1,0 +1,8 @@
+public class Depto {
+
+	//constructor
+	public void Depto(){
+		//
+	}
+
+}

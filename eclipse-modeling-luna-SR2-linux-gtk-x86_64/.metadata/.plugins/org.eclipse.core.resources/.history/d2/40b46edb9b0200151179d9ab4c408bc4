@@ -1,0 +1,59 @@
+
+package br.com.fzlbpms.itil.itsm.icm;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Mensagem {
+	
+	private Integer id;
+	
+	public br.com.organization.model.Funcionario remetente	
+	public br.com.organization.model.Funcionario destinatario	
+	public java.lang.Date data	
+
+
+	//constructors
+	public void Mensagem(){
+		//not be implemented
+	}
+	public void Mensagem(br.com.organization.model.Funcionario remetente){
+		//not be implemented
+	}
+	public void Mensagem(br.com.organization.model.Funcionario destinatario){
+		//not be implemented
+	}
+	public void Mensagem(java.lang.Date data){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+	public br.com.organization.model.Funcionario getRemetente(){
+		return this.remetente;
+	}
+	public void setRemetente(br.com.organization.model.Funcionario remetente){
+		this.remetente = remetente;
+	}		
+	public br.com.organization.model.Funcionario getDestinatario(){
+		return this.destinatario;
+	}
+	public void setDestinatario(br.com.organization.model.Funcionario destinatario){
+		this.destinatario = destinatario;
+	}		
+	public java.lang.Date getData(){
+		return this.data;
+	}
+	public void setData(java.lang.Date data){
+		this.data = data;
+	}		
+}

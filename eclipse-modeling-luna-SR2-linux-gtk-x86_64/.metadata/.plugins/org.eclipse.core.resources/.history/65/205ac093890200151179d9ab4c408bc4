@@ -1,0 +1,75 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			public  java.lang.String description
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@45e37a7e (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+			public  mensagemasd mensagens
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@1a7288a3 (name: mensagem, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+			public  asd incidentId
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@6941827a (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)
+				
+			public  IncidentStatusasd status
+			org.eclipse.uml2.uml.internal.impl.EnumerationImpl@674658f7 (name: IncidentStatus, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false)
+				
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.Mensagem
+			public  asd data
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@58fe0499 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate)
+				
+			public  Funcionarioasd remetente
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@57ac5227 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+			public  Funcionarioasd destinatario
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@57ac5227 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public fechado
+			public atribuidoParaUmTecnico
+			public pendente
+			public resolvido
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Class1
+			
+			
+		
+		
+	
+	
+		br.com.organization.model.Departamento
+			private  java.lang.String nome
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@463b4ac8 (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private  asd codigo
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@7c098bb3 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)
+				
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private  java.lang.String nome
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@43aaf813 (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+			private  java.lang.String cpf
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@5c18016b (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+		
+	
+	
+	
+	
+	
+	

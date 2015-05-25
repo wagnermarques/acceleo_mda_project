@@ -1,0 +1,8 @@
+public class IncidentCommunication {
+
+	//constructor
+	public void IncidentCommunication(){
+		//
+	}
+
+}

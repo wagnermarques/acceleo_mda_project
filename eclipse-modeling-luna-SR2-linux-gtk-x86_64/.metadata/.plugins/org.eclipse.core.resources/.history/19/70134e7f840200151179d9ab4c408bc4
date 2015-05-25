@@ -1,0 +1,152 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			public  java.lang.String description
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@45e37a7e (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+			public  mensagemasd mensagens
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@1a7288a3 (name: mensagem, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+			public  asd incidentId
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@6941827a (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)
+				
+			public  IncidentStatusasd status
+			org.eclipse.uml2.uml.internal.impl.EnumerationImpl@674658f7 (name: IncidentStatus, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false)
+				
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.Mensagem
+			public  asd data
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@58fe0499 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate)
+				
+			public  Funcionarioasd remetente
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@57ac5227 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+			public  Funcionarioasd destinatario
+			org.eclipse.uml2.uml.internal.impl.ClassImpl@57ac5227 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+				
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public fechado
+			public atribuidoParaUmTecnico
+			public pendente
+			public resolvido
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Class1
+			public  invalidasd Attribute8
+			
+				
+			public  invalidasd Attribute5
+			
+				
+			
+				
+			public  asd aByteObject
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@774698ab (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteObject)
+				
+			public  invalidasd Attribute9
+			
+				
+			public  invalidasd Attribute6
+			
+				
+			public  asd aMap
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@1e7aa82b (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap)
+				
+			public  invalidasd Attribute2
+			
+				
+			public  asd aDoubleObject
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@66b7550d (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDoubleObject)
+				
+			public  asd aBigDecimal
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@5644dc81 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal)
+				
+			public  asd aBigInteger
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@278bb07e (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigInteger)
+				
+			public  asd float
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@5bd82fed (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat)
+				
+			public  invalidasd Attribute3
+			
+				
+			public  asd aByteArray
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@aeab9a1 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray)
+				
+			public  asd aFloatObject
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@476b0ae6 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloatObject)
+				
+			public  asd aLong
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@655f7ea (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong)
+				
+			public  asd aInt
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@4b3a45f1 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)
+				
+			public  asd aEnumerator
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@698122b2 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEnumerator)
+				
+			public  invalidasd Attribute7
+			
+				
+			public  asd aDouble
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@6b44435b (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble)
+				
+			public  asd aDate
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@2a2c13a8 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate)
+				
+			public  asd aChar
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@a4ca3f6 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar)
+				
+			public  invalidasd Attribute4
+			
+				
+			public  asd aByte
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@625abb97 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte)
+				
+			public  asd aCharacterObjetc
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@31aa3ca5 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ECharacterObject)
+				
+			public  asd aBooleanObject
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@11981797 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject)
+				
+			public  asd aList
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@7c541c15 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList)
+				
+		
+	
+	
+		br.com.organization.model.Departamento
+			private  java.lang.String nome
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@463b4ac8 (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private  asd codigo
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@7c098bb3 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)
+				
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private  java.lang.String nome
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@43aaf813 (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+			private  java.lang.String cpf
+			org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@5c18016b (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String)
+				
+		
+	
+	
+	
+	
+	
+	

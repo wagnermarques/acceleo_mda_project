@@ -1,0 +1,46 @@
+	br.com.fzlbpms.itil.itsm.icm
+		br.com.fzlbpms.itil.itsm.icm.Incident
+			public org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@5644dc81 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt) incidentId
+			public org.eclipse.uml2.uml.internal.impl.ClassImpl@31aa3ca5 (name: mensagem, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false) mensagens
+			public org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@1522d8a0 (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String) description
+			public org.eclipse.uml2.uml.internal.impl.EnumerationImpl@5e81e5ac (name: IncidentStatus, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) status
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.mensagem
+			public org.eclipse.uml2.uml.internal.impl.ClassImpl@3c989952 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false) remetente
+			public org.eclipse.uml2.uml.internal.impl.ClassImpl@3c989952 (name: Funcionario, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false) destinatario
+			public org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@2a2c13a8 (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate) data
+		
+	
+	
+		br.com.fzlbpms.itil.itsm.icm.IncidentStatus
+			public pendente
+			public atribuidoParaUmTecnico
+			public fechado
+			public resolvido
+	
+	
+	
+	br.com.organization.model
+		br.com.organization.model.Departamento
+			private org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@33aeca0b (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String) nome
+		
+			protected recebeFunctionario
+	
+	
+		br.com.organization.model.Funcionario
+			private org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@793138bd (eProxyURI: pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt) codigo
+		
+	
+	
+		br.com.organization.model.Pessoa
+			private org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@3e14c16d (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String) nome
+			private org.eclipse.uml2.uml.internal.impl.PrimitiveTypeImpl@4bd1f8dd (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String) cpf
+		
+	
+	
+	
+	
+	
+	

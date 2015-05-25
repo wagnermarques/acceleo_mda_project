@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="fzlUtil" nsURI="FzlDefaultAcceleoProject::common::fzlUtil" startHeaderPosition="29" endHeaderPosition="178">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/5.0.0/Types#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/5.0.0/UML#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Query" name="name" visibility="Public">
+      <parameter name="arg">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/4">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+      </expression>
+      <type xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Query" name="getJavaTypeFromProperty" visibility="Public">
+      <parameter name="p">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+      </parameter>
+      <expression xsi:type="ocl.ecore:IfExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+            </source>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UMLPrimitiveTypes.library.uml#String)">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </condition>
+        <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.String">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </thenExpression>
+        <elseExpression xsi:type="ocl.ecore:IfExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+              </source>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByte)">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+          </condition>
+          <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="byte">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </thenExpression>
+          <elseExpression xsi:type="ocl.ecore:IfExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                </source>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteObject)">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </condition>
+            <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Byte">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </thenExpression>
+            <elseExpression xsi:type="ocl.ecore:IfExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                  </source>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray)">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </condition>
+              <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="byte[]">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </thenExpression>
+              <elseExpression xsi:type="ocl.ecore:IfExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                      <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                      </source>
+                      <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                    </source>
+                  </source>
+                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject)">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </argument>
+                </condition>
+                <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Booelan">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </thenExpression>
+                <elseExpression xsi:type="ocl.ecore:IfExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <source xsi:type="ocl.ecore:PropertyCallExp">
+                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                        <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                        </source>
+                        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                      </source>
+                    </source>
+                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean)">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </argument>
+                  </condition>
+                  <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="boolean">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  </thenExpression>
+                  <elseExpression xsi:type="ocl.ecore:IfExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                          <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                          </source>
+                          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                        </source>
+                      </source>
+                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EIntegerObject)">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      </argument>
+                    </condition>
+                    <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Integer">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    </thenExpression>
+                    <elseExpression xsi:type="ocl.ecore:IfExp">
+                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                        <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          <source xsi:type="ocl.ecore:PropertyCallExp">
+                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                            </source>
+                            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                          </source>
+                        </source>
+                        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt)">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        </argument>
+                      </condition>
+                      <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="int">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                      </thenExpression>
+                      <elseExpression xsi:type="ocl.ecore:IfExp">
+                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                            <source xsi:type="ocl.ecore:PropertyCallExp">
+                              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                              </source>
+                              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                            </source>
+                          </source>
+                          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDoubleObject)">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          </argument>
+                        </condition>
+                        <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Double">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                        </thenExpression>
+                        <elseExpression xsi:type="ocl.ecore:IfExp">
+                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                              <source xsi:type="ocl.ecore:PropertyCallExp">
+                                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                </source>
+                                <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                              </source>
+                            </source>
+                            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble)">
+                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                            </argument>
+                          </condition>
+                          <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="double">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                          </thenExpression>
+                          <elseExpression xsi:type="ocl.ecore:IfExp">
+                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                            <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                <source xsi:type="ocl.ecore:PropertyCallExp">
+                                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                  </source>
+                                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                </source>
+                              </source>
+                              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigDecimal)">
+                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                              </argument>
+                            </condition>
+                            <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.math.BigDecimal">
+                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                            </thenExpression>
+                            <elseExpression xsi:type="ocl.ecore:IfExp">
+                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                              <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                    </source>
+                                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                  </source>
+                                </source>
+                                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBigInteger)">
+                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                </argument>
+                              </condition>
+                              <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.math.BigInteger">
+                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                              </thenExpression>
+                              <elseExpression xsi:type="ocl.ecore:IfExp">
+                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                      <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                      </source>
+                                      <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                    </source>
+                                  </source>
+                                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat)">
+                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                  </argument>
+                                </condition>
+                                <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="float">
+                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                </thenExpression>
+                                <elseExpression xsi:type="ocl.ecore:IfExp">
+                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                  <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                      <source xsi:type="ocl.ecore:PropertyCallExp">
+                                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                        <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                        </source>
+                                        <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                      </source>
+                                    </source>
+                                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloatObject)">
+                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                    </argument>
+                                  </condition>
+                                  <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Float">
+                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                  </thenExpression>
+                                  <elseExpression xsi:type="ocl.ecore:IfExp">
+                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                    <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                      <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                                          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                          <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                          </source>
+                                          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                        </source>
+                                      </source>
+                                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ELong)">
+                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                      </argument>
+                                    </condition>
+                                    <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="long">
+                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                    </thenExpression>
+                                    <elseExpression xsi:type="ocl.ecore:IfExp">
+                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                      <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                        <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                          <source xsi:type="ocl.ecore:PropertyCallExp">
+                                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                            </source>
+                                            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                          </source>
+                                        </source>
+                                        <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEnumerator)">
+                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                        </argument>
+                                      </condition>
+                                      <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="enum">
+                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                      </thenExpression>
+                                      <elseExpression xsi:type="ocl.ecore:IfExp">
+                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                        <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                          <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                            <source xsi:type="ocl.ecore:PropertyCallExp">
+                                              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                              </source>
+                                              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                            </source>
+                                          </source>
+                                          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate)">
+                                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                          </argument>
+                                        </condition>
+                                        <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Date">
+                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                        </thenExpression>
+                                        <elseExpression xsi:type="ocl.ecore:IfExp">
+                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                          <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                              <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                </source>
+                                                <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                              </source>
+                                            </source>
+                                            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EChar)">
+                                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                            </argument>
+                                          </condition>
+                                          <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="char">
+                                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                          </thenExpression>
+                                          <elseExpression xsi:type="ocl.ecore:IfExp">
+                                            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                            <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                              <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                  </source>
+                                                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                                </source>
+                                              </source>
+                                              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#ECharacterObject)">
+                                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                              </argument>
+                                            </condition>
+                                            <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.lang.Character">
+                                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                            </thenExpression>
+                                            <elseExpression xsi:type="ocl.ecore:IfExp">
+                                              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                              <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                                <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                    </source>
+                                                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                                  </source>
+                                                </source>
+                                                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList)">
+                                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                </argument>
+                                              </condition>
+                                              <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.util.List">
+                                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                              </thenExpression>
+                                              <elseExpression xsi:type="ocl.ecore:IfExp">
+                                                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                <condition xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/endsWith">
+                                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                                                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/toString">
+                                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                      <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                      </source>
+                                                      <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                                    </source>
+                                                  </source>
+                                                  <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFeatureMap)">
+                                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                  </argument>
+                                                </condition>
+                                                <thenExpression xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="java.util.Map">
+                                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                </thenExpression>
+                                                <elseExpression xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/+">
+                                                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                  <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/+">
+                                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                    <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/replace">
+                                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                      <source xsi:type="ocl.ecore:OperationCallExp">
+                                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                        <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                          <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Package"/>
+                                                            <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                              </source>
+                                                              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                                            </source>
+                                                            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type/package"/>
+                                                          </source>
+                                                          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/qualifiedName"/>
+                                                        </source>
+                                                        <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toString"/>
+                                                      </source>
+                                                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="model::">
+                                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                      </argument>
+                                                      <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="">
+                                                        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                      </argument>
+                                                    </source>
+                                                    <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".">
+                                                      <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                    </argument>
+                                                  </source>
+                                                  <argument xsi:type="ocl.ecore:PropertyCallExp">
+                                                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                                                    <source xsi:type="ocl.ecore:PropertyCallExp">
+                                                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+                                                      <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/getJavaTypeFromProperty/p">
+                                                        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+                                                      </source>
+                                                      <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/5.0.0/UML#//TypedElement/type"/>
+                                                    </source>
+                                                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+                                                  </argument>
+                                                </elseExpression>
+                                              </elseExpression>
+                                            </elseExpression>
+                                          </elseExpression>
+                                        </elseExpression>
+                                      </elseExpression>
+                                    </elseExpression>
+                                  </elseExpression>
+                                </elseExpression>
+                              </elseExpression>
+                            </elseExpression>
+                          </elseExpression>
+                        </elseExpression>
+                      </elseExpression>
+                    </elseExpression>
+                  </elseExpression>
+                </elseExpression>
+              </elseExpression>
+            </elseExpression>
+          </elseExpression>
+        </elseExpression>
+      </expression>
+      <type xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="replace">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+        <eParameters name="replacement">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="endsWith">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="substring">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="+">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="name">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/name"/>
+        <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        <eParameters name="arg">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getJavaTypeFromProperty">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/getJavaTypeFromProperty"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="p">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+      <eOperations name="toString">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Type_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Property_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Type"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/name">
+      <details key="start" value="131"/>
+      <details key="end" value="180"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/name/arg">
+      <details key="start" value="150"/>
+      <details key="end" value="160"/>
+      <details key="line" value="4"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/name/self">
+      <details key="start" value="173"/>
+      <details key="end" value="177"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/getJavaTypeFromProperty">
+      <details key="start" value="183"/>
+      <details key="end" value="2916"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/getJavaTypeFromProperty/p">
+      <details key="start" value="221"/>
+      <details key="end" value="233"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/getJavaTypeFromProperty/%">
+      <details key="start" value="251"/>
+      <details key="end" value="2913"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/getJavaTypeFromProperty/%/%">
+      <details key="start" value="254"/>
+      <details key="end" value="321"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/getJavaTypeFromProperty/%/%/%">
+      <details key="start" value="254"/>
+      <details key="end" value="271"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/getJavaTypeFromProperty/%/%/%/%">
+      <details key="start" value="254"/>
+      <details key="end" value="260"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/getJavaTypeFromProperty/%/%/%/%/p">
+      <details key="start" value="254"/>
+      <details key="end" value="255"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/getJavaTypeFromProperty/%/%/%.1">
+      <details key="start" value="281"/>
+      <details key="end" value="320"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/getJavaTypeFromProperty/%/%.1">
+      <details key="start" value="327"/>
+      <details key="end" value="345"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/getJavaTypeFromProperty/%/%.2">
+      <details key="start" value="355"/>
+      <details key="end" value="2907"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/getJavaTypeFromProperty/%/%.2/%">
+      <details key="start" value="358"/>
+      <details key="end" value="440"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/getJavaTypeFromProperty/%/%.2/%/%">
+      <details key="start" value="358"/>
+      <details key="end" value="375"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/getJavaTypeFromProperty/%/%.2/%/%/%">
+      <details key="start" value="358"/>
+      <details key="end" value="364"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/getJavaTypeFromProperty/%/%.2/%/%/%/p">
+      <details key="start" value="358"/>
+      <details key="end" value="359"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/getJavaTypeFromProperty/%/%.2/%/%.1">
+      <details key="start" value="385"/>
+      <details key="end" value="439"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/getJavaTypeFromProperty/%/%.2/%.1">
+      <details key="start" value="446"/>
+      <details key="end" value="452"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/getJavaTypeFromProperty/%/%.2/%.2">
+      <details key="start" value="460"/>
+      <details key="end" value="2901"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%">
+      <details key="start" value="463"/>
+      <details key="end" value="551"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%/%">
+      <details key="start" value="463"/>
+      <details key="end" value="480"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%/%/%">
+      <details key="start" value="463"/>
+      <details key="end" value="469"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%/%/%/p">
+      <details key="start" value="463"/>
+      <details key="end" value="464"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%/%.1">
+      <details key="start" value="490"/>
+      <details key="end" value="550"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.1">
+      <details key="start" value="557"/>
+      <details key="end" value="573"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2">
+      <details key="start" value="581"/>
+      <details key="end" value="2895"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%">
+      <details key="start" value="584"/>
+      <details key="end" value="671"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%/%">
+      <details key="start" value="584"/>
+      <details key="end" value="601"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="584"/>
+      <details key="end" value="590"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="584"/>
+      <details key="end" value="585"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="611"/>
+      <details key="end" value="670"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.1">
+      <details key="start" value="677"/>
+      <details key="end" value="685"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2">
+      <details key="start" value="694"/>
+      <details key="end" value="2889"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="697"/>
+      <details key="end" value="788"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="697"/>
+      <details key="end" value="714"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="697"/>
+      <details key="end" value="703"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="697"/>
+      <details key="end" value="698"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="724"/>
+      <details key="end" value="787"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="794"/>
+      <details key="end" value="813"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="821"/>
+      <details key="end" value="2883"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="824"/>
+      <details key="end" value="909"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="824"/>
+      <details key="end" value="841"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="824"/>
+      <details key="end" value="830"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="824"/>
+      <details key="end" value="825"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="851"/>
+      <details key="end" value="908"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="915"/>
+      <details key="end" value="924"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="937"/>
+      <details key="end" value="2877"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="940"/>
+      <details key="end" value="1031"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="940"/>
+      <details key="end" value="957"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="940"/>
+      <details key="end" value="946"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="940"/>
+      <details key="end" value="941"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="967"/>
+      <details key="end" value="1030"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1037"/>
+      <details key="end" value="1056"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1064"/>
+      <details key="end" value="2871"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1067"/>
+      <details key="end" value="1148"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1067"/>
+      <details key="end" value="1084"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1067"/>
+      <details key="end" value="1073"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1067"/>
+      <details key="end" value="1068"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1094"/>
+      <details key="end" value="1147"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1154"/>
+      <details key="end" value="1159"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1170"/>
+      <details key="end" value="2865"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1173"/>
+      <details key="end" value="1263"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1173"/>
+      <details key="end" value="1190"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1173"/>
+      <details key="end" value="1179"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1173"/>
+      <details key="end" value="1174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1200"/>
+      <details key="end" value="1262"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1269"/>
+      <details key="end" value="1287"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1295"/>
+      <details key="end" value="2859"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1298"/>
+      <details key="end" value="1382"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1298"/>
+      <details key="end" value="1315"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1298"/>
+      <details key="end" value="1304"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1298"/>
+      <details key="end" value="1299"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1325"/>
+      <details key="end" value="1381"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1388"/>
+      <details key="end" value="1396"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1406"/>
+      <details key="end" value="2853"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1409"/>
+      <details key="end" value="1497"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1409"/>
+      <details key="end" value="1426"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1409"/>
+      <details key="end" value="1415"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1409"/>
+      <details key="end" value="1410"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1436"/>
+      <details key="end" value="1496"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1503"/>
+      <details key="end" value="1525"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1533"/>
+      <details key="end" value="2847"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1536"/>
+      <details key="end" value="1624"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1536"/>
+      <details key="end" value="1553"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1536"/>
+      <details key="end" value="1542"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1536"/>
+      <details key="end" value="1537"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1563"/>
+      <details key="end" value="1623"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1630"/>
+      <details key="end" value="1652"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1662"/>
+      <details key="end" value="2841"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1665"/>
+      <details key="end" value="1748"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1665"/>
+      <details key="end" value="1682"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1665"/>
+      <details key="end" value="1671"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1665"/>
+      <details key="end" value="1666"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1692"/>
+      <details key="end" value="1747"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1754"/>
+      <details key="end" value="1761"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1769"/>
+      <details key="end" value="2835"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1772"/>
+      <details key="end" value="1861"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1772"/>
+      <details key="end" value="1789"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1772"/>
+      <details key="end" value="1778"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1772"/>
+      <details key="end" value="1773"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1799"/>
+      <details key="end" value="1860"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1867"/>
+      <details key="end" value="1884"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="1900"/>
+      <details key="end" value="2829"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="1903"/>
+      <details key="end" value="1985"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="1903"/>
+      <details key="end" value="1920"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="1903"/>
+      <details key="end" value="1909"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="1903"/>
+      <details key="end" value="1904"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="1930"/>
+      <details key="end" value="1984"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="1991"/>
+      <details key="end" value="1997"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2006"/>
+      <details key="end" value="2823"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2009"/>
+      <details key="end" value="2097"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2009"/>
+      <details key="end" value="2026"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2009"/>
+      <details key="end" value="2015"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2009"/>
+      <details key="end" value="2010"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2036"/>
+      <details key="end" value="2096"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2103"/>
+      <details key="end" value="2109"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2117"/>
+      <details key="end" value="2817"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2120"/>
+      <details key="end" value="2202"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2120"/>
+      <details key="end" value="2137"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2120"/>
+      <details key="end" value="2126"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2120"/>
+      <details key="end" value="2121"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2147"/>
+      <details key="end" value="2201"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2208"/>
+      <details key="end" value="2224"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2232"/>
+      <details key="end" value="2811"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2235"/>
+      <details key="end" value="2317"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2235"/>
+      <details key="end" value="2252"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2235"/>
+      <details key="end" value="2241"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2235"/>
+      <details key="end" value="2236"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2262"/>
+      <details key="end" value="2316"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2323"/>
+      <details key="end" value="2329"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2338"/>
+      <details key="end" value="2805"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2341"/>
+      <details key="end" value="2434"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2341"/>
+      <details key="end" value="2358"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2341"/>
+      <details key="end" value="2347"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2341"/>
+      <details key="end" value="2342"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2368"/>
+      <details key="end" value="2433"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2440"/>
+      <details key="end" value="2461"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2469"/>
+      <details key="end" value="2799"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2472"/>
+      <details key="end" value="2555"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2472"/>
+      <details key="end" value="2489"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2472"/>
+      <details key="end" value="2478"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2472"/>
+      <details key="end" value="2473"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2499"/>
+      <details key="end" value="2554"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2561"/>
+      <details key="end" value="2577"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2585"/>
+      <details key="end" value="2793"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2588"/>
+      <details key="end" value="2676"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2588"/>
+      <details key="end" value="2605"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2588"/>
+      <details key="end" value="2594"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/p">
+      <details key="start" value="2588"/>
+      <details key="end" value="2589"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2615"/>
+      <details key="end" value="2675"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2682"/>
+      <details key="end" value="2697"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2">
+      <details key="start" value="2705"/>
+      <details key="end" value="2785"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2772"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2768"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2745"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2734"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/%/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2720"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/%/%/%">
+      <details key="start" value="2705"/>
+      <details key="end" value="2711"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%/%/%/%/p">
+      <details key="start" value="2705"/>
+      <details key="end" value="2706"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%.1">
+      <details key="start" value="2754"/>
+      <details key="end" value="2763"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%/%.2">
+      <details key="start" value="2765"/>
+      <details key="end" value="2767"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%/%.1">
+      <details key="start" value="2769"/>
+      <details key="end" value="2772"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1">
+      <details key="start" value="2774"/>
+      <details key="end" value="2785"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1/%">
+      <details key="start" value="2774"/>
+      <details key="end" value="2780"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/getJavaTypeFromProperty/%/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.2/%.1/%/p">
+      <details key="start" value="2774"/>
+      <details key="end" value="2775"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

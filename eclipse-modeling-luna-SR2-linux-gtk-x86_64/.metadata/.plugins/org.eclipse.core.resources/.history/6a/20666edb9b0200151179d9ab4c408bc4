@@ -1,0 +1,10 @@
+public class IncidentCommunication {
+		datatime	
+		pessoa	
+
+	//constructor
+	public void IncidentCommunication(){
+		//
+	}
+
+}

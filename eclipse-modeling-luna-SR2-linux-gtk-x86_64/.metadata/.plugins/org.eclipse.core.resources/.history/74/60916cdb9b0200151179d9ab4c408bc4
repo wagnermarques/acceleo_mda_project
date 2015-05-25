@@ -1,0 +1,29 @@
+
+package model;
+
+import javax.persistence.*;
+import java.util.*;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class StateMachine1 {
+	
+	private Integer id;
+	
+
+
+	//constructors
+	public void StateMachine1(){
+		//not be implemented
+	}
+
+
+	//getters and setters
+	public Integer getId(){
+		return this.id;
+	}
+	public void setId(Integer id){
+		this.id = id;
+	}
+
+}

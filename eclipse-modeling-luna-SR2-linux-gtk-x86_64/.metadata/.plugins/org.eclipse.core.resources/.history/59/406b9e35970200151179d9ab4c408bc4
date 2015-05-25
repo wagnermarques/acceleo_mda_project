@@ -1,0 +1,32 @@
+[comment encoding = UTF-8 /]
+[module mainJavaJPAEntities('http://www.eclipse.org/uml2/5.0.0/UML') extends FzlDefaultAcceleoProject::templates::main]
+
+[import FzlDefaultAcceleoProject::common::fzlUtil /]
+
+[template public mainTemplate(c : Class)]
+[comment @main /]
+[file (c.name.toUpperFirst().concat('.java'), false, 'UTF-8')]
+public class [c.name.toUpperFirst()/] {
+	
+	[for (p : Property | c.ownedElement->selectByType(Property))]
+	[p.visibility/] [getJavaTypeFromProperty(p)/] [p.name/]	
+	[/for]
+
+	//constructora
+	public void [c.name.toUpperFirst()/](){
+		//not be implemented
+	}
+	[for (p : Property | c.ownedElement->selectByType(Property))]
+		//constructor
+		public void [c.name.toUpperFirst()/]([getJavaTypeFromProperty(p)/] [p.name/]){
+			//not be implemented
+		}
+	[/for]
+
+
+}
+[/file]
+[/template]
+
+
+

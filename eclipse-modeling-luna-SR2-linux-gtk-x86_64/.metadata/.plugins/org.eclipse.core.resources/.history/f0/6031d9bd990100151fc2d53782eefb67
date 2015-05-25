@@ -1,0 +1,8 @@
+public class Incident {
+
+	//constructor
+	public void Incident(){
+		//
+	}
+
+}
